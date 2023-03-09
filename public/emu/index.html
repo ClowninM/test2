@@ -1,19 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<title>HTML Full-screen iframe (100% Height and Width)</title>
+<style>
+    body{
+        margin: 0; /* Remove default margin */
+    }
+    iframe{
+        display: block;  /* iframes are inline by default */
+        height: 100vh;  /* Set height to 100% of the viewport height */
+        width: 100vw;  /* Set width to 100% of the viewport width */
+        border: none; /* Remove default border */
+        background: lightyellow; /* Just for styling */
+    }
+</style>
+</head>
+<body>
+      <nav id="buildTopnav">
+      </nav>
+    <iframe src="https://webretro.jscraft.repl.co/"></iframe>
+</body>
+</html>
    <head>
       <script src='index.js'></script>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    </head>
-   <body>
-      <iframe id="frame" src="https://webretro.jscraft.repl.co/""height="100%" width="100%""scrolling="no"></iframe>
-      <nav id="buildTopnav">
-      </nav>
-      <script>
-         $(function(){
-           $("#buildTopnav").load("../navbar.html");
-         });
-      </script>
-   </body>
 </html>
